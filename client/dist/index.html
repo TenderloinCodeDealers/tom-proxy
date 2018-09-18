@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>Vourcher</title>
+</head>
+
+<body>
+    <div id="Carousel"></div>
+    <div id="SideBar"></div>
+    <div id="RatingsAndReviews"></div>
+    <div id="RVDeals"></div>
+    <!-- <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script> -->
+    <script src="https://s3-us-west-1.amazonaws.com/vourcher-tom-proxy/Carousel/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/vourcher-tom-proxy/Side-bar/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/vourcher-tom-proxy/Ratings-And-Reviews/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/vourcher-tom-proxy/Recently-Viewed-Deals/bundle.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+        ReactDOM.render(
+            React.createElement(Carousel),
+            document.getElementById('Carousel')
+        );
+        ReactDOM.render(
+            React.createElement(SideBar),
+            document.getElementById('SideBar')
+        );
+        ReactDOM.render(
+            React.createElement(RatingsAndReviews),
+            document.getElementById('RatingsAndReviews')
+        );
+        ReactDOM.render(
+            React.createElement(RVDeals),
+            document.getElementById('RVDeals')
+        );
+    </script>
+</body>
+
+</html>
