@@ -41,7 +41,7 @@ app.get("/:id/api/images", function(req, res) {
 
 app.get("/:id/api/products", function(req, res) {
   let productId = req.params.id;
-  res.redirect(`${sidebarServer}/${productId}/api/images`);
+  res.redirect(`${sidebarServer}/${productId}/api/products`);
 });
 
 let port = 3000;
