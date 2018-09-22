@@ -3,10 +3,10 @@ var app = express();
 
 app.use("/:id", express.static(__dirname + "/../client/dist"));
 
-const carouselServer = "http://localhost:3001";
-const sidebarServer = "http://localhost:3004";
-const ratingsAndReviewsServer = "http://localhost:3002";
-const rVDealsServer = "http://localhost:3003";
+const carouselServer = "http://54.183.146.159/";
+const sidebarServer = "http://18.191.153.175:3004/2";
+const ratingsAndReviewsServer = "http://13.57.214.131:30";
+const rVDealsServer = "http://54.193.11.2:3000";
 
 app.get(`/:id/api/recently-viewed-product-data`, function(req, res) {
   const id = req.params.id;
